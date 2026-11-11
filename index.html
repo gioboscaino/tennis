@@ -64,6 +64,8 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(3.4rem,11vw,8.5rem
 .modes button:hover:not([aria-pressed="true"]){color:var(--panel-ink)}
 button:focus-visible,input:focus-visible{outline:2px solid var(--ball);outline-offset:2px}
 .stage figcaption{font-size:.98rem;line-height:1.5;color:var(--panel-muted);max-width:44rem;min-height:3em}
+.hint{flex:1 1 16rem;margin:0;font-size:.98rem;line-height:1.4;color:var(--panel-ink)}
+.hint b{color:var(--ball);font-weight:600}
 
 /* sections */
 section{padding:clamp(2.5rem,6vw,4.5rem) 0 0}
@@ -184,6 +186,7 @@ footer{padding:3.5rem 0 4rem;color:var(--muted);font-size:.92rem}
         <button type="button" data-mode="segni" aria-pressed="false">I segni</button>
         <button type="button" data-mode="densita" aria-pressed="false">La densità</button>
       </div>
+      <p class="hint">Clicca su <b>La foto</b>, <b>I segni</b> o <b>La densità</b> per cambiare l’immagine.</p>
     </div>
     <figcaption id="stageCap" aria-live="polite"></figcaption>
   </figure>
@@ -313,8 +316,6 @@ footer{padding:3.5rem 0 4rem;color:var(--muted);font-size:.92rem}
   <p>La superficie accumula tutto quello che è successo da quando è stata posata: partite, allenamenti, riscaldamenti, raccattapalle. Dedurre da qui come gioca un singolo giocatore sarebbe una fallacia ecologica.</p>
   <h3>Lo strumento non è uniforme.</h3>
   <p>Sul verde e sul grigio il contrasto è diverso: la soglia si adatta al rumore di ciascuna superficie, ma il confronto resta approssimato. E la risoluzione raddoppia passando dal lato lontano a quello vicino: le tracce più sottili si vedono meglio vicino all’obiettivo.</p>
-  <h3>Un’unica osservazione.</h3>
-  <p>Uno scatto, una luce, un’inquadratura. Una seconda foto, magari dall’altra metà campo, sarebbe la prima replica.</p>
 
   <details>
     <summary>Come è fatta l’analisi</summary>
